@@ -1,0 +1,28 @@
+﻿<Window x:Class="OnlineStoreApp.Views.AdminForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Admin - Manage Products" Height="450" Width="800">
+    <Grid>
+        <Label Content="Product ID:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <TextBox x:Name="tbProductID" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,10,0,0" Width="250"/>
+
+        <Label Content="Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0"/>
+        <TextBox x:Name="tbName" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,50,0,0" Width="250"/>
+
+        <Label Content="Description:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,90,0,0"/>
+        <TextBox x:Name="tbDescription" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,90,0,0" Width="250"/>
+
+        <Label Content="Category:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,130,0,0"/>
+        <ComboBox x:Name="cmbCategory" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,130,0,0" Width="250"/>
+
+        <Label Content="Price:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,170,0,0"/>
+        <TextBox x:Name="tbPrice" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,170,0,0" Width="250"/>
+
+        <Button Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,10,0,0" Width="100" Click="btnAdd_Click"/>
+        <Button Content="Update" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,50,0,0" Width="100" Click="btnUpdate_Click"/>
+        <Button Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,90,0,0" Width="100" Click="btnDelete_Click"/>
+        <Button Content="Refresh" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,130,0,0" Width="100" Click="btnRefresh_Click"/>
+
+        <DataGrid x:Name="dataGridViewProducts" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,220,0,0" Height="200" Width="760"/>
+    </Grid>
+</Window>
